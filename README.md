@@ -22,17 +22,17 @@ Um único arquivo .cs (ou .docx com o código formatado), com todas as classes d
 
 CHECKLIST DE ENTREGA 
 
-[ ]  Toda a visibilidade dos membros está correta 
+[X]  Toda a visibilidade dos membros está correta 
 
-[ ]  Encapsulamento aplicado em toda classe
+[X]  Encapsulamento aplicado em toda classe
 
-[ ]  Toda classe com estado obrigatório tem construtor
+[X]  Toda classe com estado obrigatório tem construtor
 
-[ ]  Pelo menos uma composição e uma agregação/associação implementadas
+[X]  Pelo menos uma composição e uma agregação/associação implementadas
 
-[ ]  Pelo menos uma mensagem comentada (destinatário/seletor/argumento)
+[X]  Pelo menos uma mensagem comentada (destinatário/seletor/argumento)
 
-[ ]  Código compila sem erros
+[X]  Código compila sem erros
 
-[ ]  No Program Main, crie dois alunos e realize ao menos uma matrícula
+[X]  No Program Main, crie dois alunos e realize ao menos uma matrícula
 
