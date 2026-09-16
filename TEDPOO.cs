@@ -55,7 +55,6 @@ public class Aluno
     }
 }
 
-
 public class Plano
 {
     // Atributos privados para garantir encapsulamento.
@@ -75,7 +74,6 @@ public class Plano
         ValorMensal = valorMensal;
     }
 }
-
 
 public class Matricula
 {
@@ -103,7 +101,6 @@ public class Matricula
     }
 }
 
-
 public class PersonalTrainer
 {
     // Atributos privados
@@ -116,7 +113,6 @@ public class PersonalTrainer
         Cpf = cpf;
     }
 }
-
 
 public class Academia
 {
@@ -189,7 +185,6 @@ public class Academia
             throw new Exception(
                 "O plano não está cadastrado na academia.");
         }
-
         /* 
         Criação da matrícula;
         A Academia cria e mantém a matrícula, estabelecendo uma relação entre Aluno e Plano.
@@ -197,7 +192,6 @@ public class Academia
         Matricula matricula = new Matricula(aluno, plano, dataInicio);
 
         matriculas.Add(matricula);
-
         /*
         Associação da matrícula ao aluno;
 
@@ -209,7 +203,6 @@ public class Academia
 
         return matricula;
     }
-
     /* 
     Retorna uma cópia da lista de alunos;
     Isso impede que a lista interna seja modificada diretamente
@@ -218,19 +211,16 @@ public class Academia
     {
         return new List<Aluno>(alunos);
     }
-
     // Retorna uma cópia da lista de planos
     public List<Plano> ListarPlanos()
     {
         return new List<Plano>(planos);
     }
-
     // Retorna uma cópia da lista de personal trainers
     public List<PersonalTrainer> ListarPersonalTrainers()
     {
         return new List<PersonalTrainer>(personalTrainers);
     }
-
     // Retorna uma cópia da lista de matrículas
     public List<Matricula> ListarMatriculas()
     {
@@ -247,21 +237,18 @@ public class Program
         Relação de composiçãp entre Academia e Matrícula
         */
         Academia academia = new Academia();
-
         /*
         Criação de dois alunos.
         Cada aluno possui estado obrigatório (nome, CPF e peso)
         */
         Aluno aluno1 = new Aluno("Ryan", "123.169.426-48", 40.5m);
         Aluno aluno2 = new Aluno("Lukas", "123.168.423-48", 50.5m);
-
         /*
         Criação dos planos.
         Plano também possui estado obrigatório(nome e valor)
         */
         Plano planoMensal = new Plano("Mensal", 100.00m);
         Plano planoAnual = new Plano("Anual", 900.00m);
-
         /*
         Associação entre a Academia e os alunos.
         O objeto Aluno existe independentemente da Academia
@@ -272,7 +259,6 @@ public class Program
         // Associação entre a Academia e os planos
         academia.CadastrarPlano(planoMensal);
         academia.CadastrarPlano(planoAnual);
-
         /*
         Matrícula do primeiro aluno no plano mensal.
         Destinatário: academia
